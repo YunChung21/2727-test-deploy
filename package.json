@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@marsidev/react-turnstile": "^0.7.2",
     "framer-motion": "^11.3.19",
     "next": "14.2.4",
     "react": "^18",

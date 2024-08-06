@@ -1,7 +1,17 @@
-import React from "react";
+"use client";
+import React, { useRef, useState } from "react";
 import styles from "../../../css/section/contacts.module.css";
+import { Turnstile, TurnstileInstance } from "@marsidev/react-turnstile";
 
 const Contacts: React.FC = () => {
+  const [canSubmit, setCanSubmit] = useState(false);
+  const refTurnstile = useRef<TurnstileInstance>(null);
+
+  const handleSubmit = async () => {
+    refTurnstile.current?.reset();
+    console.log("submitted!");
+  };
+
   return (
     <>
       <div className={styles.contacts} id="contacts">
@@ -21,6 +31,7 @@ const Contacts: React.FC = () => {
               action="https://us-central1-intuitioninbox.cloudfunctions.net/httpFormSubmit?webhook=2727coworking"
               method="POST"
               className={styles.contacts__form}
+              onSubmit={handleSubmit}
               target="_blank"
             >
               <input type="hidden" name="gtmId" value="GTM-MR8V52R" />
@@ -89,15 +100,22 @@ const Contacts: React.FC = () => {
                   required
                 ></textarea>
               </label>
-              <div
-                className={styles.cf__turnstile}
-                data-sitekey="0x4AAAAAAAcNj8rbgQPT0Xv1"
-              ></div>
+              <Turnstile
+                id="turnstile-1"
+                ref={refTurnstile}
+                siteKey="0x4AAAAAAAcNj8rbgQPT0Xv1"
+                onSuccess={() => setCanSubmit(true)}
+              />
               <br />
               <button
                 className={`main__btn ${styles.contacts__form__btn}`}
                 name="bookatour"
                 type="submit"
+                disabled={!canSubmit}
+                style={{
+                  backgroundColor: canSubmit ? "#db5e5e" : "#ccc",
+                  cursor: canSubmit ? "pointer" : "not-allowed",
+                }}
               >
                 Book A Tour
               </button>
