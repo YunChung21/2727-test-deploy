@@ -1,0 +1,116 @@
+@import "../config/fonts.module.css";
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero__background {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: -5%;
+  right: -5%;
+  z-index: -1;
+  width: 110%;
+  height: 100%;
+}
+.hero__background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero__background::after {
+  content: "";
+  position: absolute;
+  opacity: 0.34;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #140a01;
+}
+.hero__container {
+  composes: container from "../config/common.module.css";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__suptitle {
+  color: #fff;
+  text-align: center;
+  font-family: AcierBAT;
+  font-size: 71.7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 71.7px;
+  text-transform: lowercase;
+  margin-top: 8.75rem;
+}
+@media (max-width: 62em) {
+  .hero__suptitle {
+    font-size: 41.2px;
+    line-height: normal;
+  }
+}
+@media (max-width: 47.9375em) {
+  .hero__suptitle {
+    font-size: 1.6875rem;
+  }
+}
+.hero__title {
+  color: #fff;
+  text-align: center;
+  font-family: AcierBAT;
+  font-size: 172.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 172.6px;
+  text-transform: lowercase;
+}
+@media (max-width: 62em) {
+  .hero__title {
+    font-size: 6.25rem;
+    line-height: normal;
+  }
+}
+@media (max-width: 47.9375em) {
+  .hero__title {
+    font-size: 4.0625rem;
+  }
+}
+.hero__text {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8;
+  line-height: 43.2px;
+  max-width: 34.6875rem;
+  margin-top: 2.375rem;
+}
+@media (max-width: 62em) {
+  .hero__text {
+    margin-top: 3rem;
+    font-size: 1.375rem;
+    line-height: normal;
+  }
+}
+@media (max-width: 47.9375em) {
+  .hero__text {
+    margin-top: 0.625rem;
+  }
+}
+.hero__btn {
+  padding: 1.25rem 2rem;
+  margin-top: 1.75rem;
+}
+@media (max-width: 47.9375em) {
+  .hero__btn {
+    margin-top: 2.5rem;
+  }
+}

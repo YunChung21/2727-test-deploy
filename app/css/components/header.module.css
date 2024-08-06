@@ -1,0 +1,239 @@
+@import "../config/fonts.module.css";
+.header {
+  width: 100%;
+  transition: background-color var(--bs-transition);
+  z-index: 50;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+}
+.header-is-sticky {
+  width: 100%;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s;
+  padding: 1.25rem 5vw;
+  max-width: 100%;
+}
+.header-is-sticky .header__container {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+@media (max-width: 62em) {
+  .header__container {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+.header__logo {
+  max-width: 6.125rem;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 62em) {
+  .header__logo {
+    max-width: 3.75rem;
+  }
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+  transition: transform 0.5s;
+}
+@media (max-width: 62em) {
+  .header__menu {
+    pointer-events: none;
+    transform: translateY(100%);
+    opacity: 0;
+    position: fixed;
+  }
+  .menu-open .header__menu {
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+  }
+}
+.header .menu__list {
+  display: flex;
+  align-items: center;
+  gap: 1.5625rem;
+}
+@media (max-width: 62em) {
+  .header .menu__list {
+    flex-direction: column;
+  }
+}
+.header .menu__link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #fff;
+}
+
+.header-is-sticky .menu__list {
+  display: flex;
+  align-items: center;
+  gap: 1.5625rem;
+}
+
+.header .menu__link br {
+  display: none;
+}
+@media (max-width: 62em) {
+  .header .menu__link br {
+    display: block;
+  }
+}
+@media (max-width: 62em) {
+  .header .menu__link {
+    font-size: 3rem;
+    line-height: 125%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.menu-open .header .menu__link {
+  color: #000;
+}
+.header-is-sticky .menu__link {
+  color: #000;
+}
+.gallery__wrapper .header .menu__link {
+  color: #000;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  gap: 1.5625rem;
+}
+
+.social__item {
+  max-width: 1.25rem;
+}
+
+.social__link svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-is-sticky .social__item {
+  color: black;
+}
+
+.header .socialIcon {
+  fill: #fff;
+}
+
+.header-is-sticky .socialIcon {
+  fill: black;
+}
+
+.menu-open .menu__link {
+  color: black;
+}
+
+.menu-open .socialIcon {
+  fill: black;
+}
+
+.black .menu__link {
+  color: black;
+}
+
+.black .socialIcon {
+  fill: black;
+}
+@media (max-width: 62em) {
+  .header__btn {
+    margin-top: 12.5rem;
+  }
+}
+
+.icon-menu {
+  display: none;
+}
+
+@media (max-width: 62em) {
+  .icon-menu {
+    display: block;
+    position: relative;
+    width: 1.875rem;
+    height: 1.125rem;
+    cursor: pointer;
+    z-index: 5;
+    background: none;
+    border: none;
+  }
+  .icon-menu span,
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+    transition: all 300ms ease 0ms;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #fff;
+  }
+
+  .black .icon-menu span,
+  .black .icon-menu::before,
+  .black .icon-menu::after,
+  .header-is-sticky .icon-menu span,
+  .header-is-sticky .icon-menu::before,
+  .header-is-sticky .icon-menu::after {
+    background-color: #000;
+  }
+
+  .menu-open .icon-menu span,
+  .menu-open .icon-menu::before,
+  .menu-open .icon-menu::after {
+    background-color: #000;
+  }
+
+  .gallery__wrapper .icon-menu span,
+  .gallery__wrapper .icon-menu::before,
+  .gallery__wrapper .icon-menu::after {
+    background-color: #000;
+  }
+
+  .icon-menu::before {
+    top: 0;
+  }
+  .icon-menu::after {
+    bottom: 0;
+  }
+  .icon-menu span {
+    top: calc(50% - 0.0625rem);
+  }
+  .menu-open .icon-menu span {
+    width: 0;
+  }
+  .menu-open .icon-menu::before {
+    top: calc(50% - 0.0625rem);
+    transform: rotate(-45deg);
+  }
+  .menu-open .icon-menu::after {
+    bottom: calc(50% - 0.0625rem);
+    transform: rotate(45deg);
+  }
+}

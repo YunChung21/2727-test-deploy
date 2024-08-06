@@ -1,0 +1,74 @@
+@import "../config/fonts.module.css";
+.rooms {
+  padding: 3.75rem 0;
+  background: #f5f4f5;
+  position: relative;
+}
+
+.room__container {
+  composes: container from "../config/common.module.css";
+}
+
+.rooms__title {
+  color: var(--bs-font-color);
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rooms__wraper {
+  margin-top: 3.125rem;
+}
+.rooms__box {
+  max-width: 32.8125rem;
+  width: 100%;
+}
+@media (max-width: 62em) {
+  .rooms__box {
+    max-width: 20.625rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .rooms__box {
+    max-width: 100%;
+  }
+}
+.rooms__box-img {
+  padding-bottom: 75%;
+  position: relative;
+}
+.rooms__box-img img {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.rooms__box-title {
+  font-family: AcierBAT;
+  color: #140a01;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.92px;
+  margin-top: 0.9375rem;
+  text-transform: uppercase;
+}
+.rooms__box-price {
+  margin-top: 0.625rem;
+  color: #140a01;
+  font-size: 14.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.92px;
+}
+.rooms__box-btn {
+  margin-top: 1.875rem;
+  display: inline-block;
+}

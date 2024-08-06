@@ -1,0 +1,58 @@
+@font-face {
+  font-family: AcierBAT;
+  font-display: swap;
+  src: url("../../../public/fonts/AcierBATText-Solid.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AktivGrotesk;
+  font-display: swap;
+  src: url("../../../public/fonts/AktivGroteskCorp-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cabin";
+  font-display: swap;
+  src: url("../../../public/fonts/Cabin-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cabin";
+  font-display: swap;
+  src: url("../../../public/fonts/Cabin-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cabin";
+  font-display: swap;
+  src: url("../../../public/fonts/Cabin-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  font-display: swap;
+  src: url("../../../public/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  font-display: swap;
+  src: url("../../../public/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../../../public/fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}

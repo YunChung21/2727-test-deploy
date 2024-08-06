@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/** Базовые анимации: */
+@keyframes show-header {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes fade-up-big {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+:root {
+  --bs-font-family: "Cabin", sans-serif;
+  --bs-font-size: 16px;
+  --bs-font-weight: 400;
+  --bs-line-height: 1;
+  --bs-font-color: #222;
+  --bs-transition: 0.3s ease-in-out;
+  --bs-radius: 10px;
+  --primary-color: #131313;
+  --primary-hover-color: #2d2d2d;
+  --secondary-color: #ff4040;
+  --white-color: #fff;
+  --black-color: #131313;
+  --bs-shadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+  --hover-shadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+    0 0 15px 0 rgba(#000, 10%);
+}
+
+:root {
+  --bs-font-family: "Cabin", sans-serif;
+  --bs-font-size: 16px;
+  --bs-font-weight: 400;
+  --bs-line-height: 1;
+  --bs-font-color: #222;
+  --bs-transition: 0.3s ease-in-out;
+  --bs-radius: 10px;
+  --primary-color: #131313;
+  --primary-hover-color: #2d2d2d;
+  --secondary-color: #ff4040;
+  --white-color: #fff;
+  --black-color: #131313;
+  --bs-shadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+  --hover-shadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+    0 0 15px 0 rgba(#000, 10%);
+}
+
+/* Шаблоны (заготовки)
+* @extend %имя шаблона;
+*/
+:root {
+  --bs-font-family: "Cabin", sans-serif;
+  --bs-font-size: 16px;
+  --bs-font-weight: 400;
+  --bs-line-height: 1;
+  --bs-font-color: #222;
+  --bs-transition: 0.3s ease-in-out;
+  --bs-radius: 10px;
+  --primary-color: #131313;
+  --primary-hover-color: #2d2d2d;
+  --secondary-color: #ff4040;
+  --white-color: #fff;
+  --black-color: #131313;
+  --bs-shadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+  --hover-shadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+    0 0 15px 0 rgba(#000, 10%);
+}
+
+/* Шаблоны (заготовки)
+* @extend %имя шаблона;
+*/
+:root {
+  --bs-font-family: "Cabin", sans-serif;
+  --bs-font-size: 16px;
+  --bs-font-weight: 400;
+  --bs-line-height: 1;
+  --bs-font-color: #222;
+  --bs-transition: 0.3s ease-in-out;
+  --bs-radius: 10px;
+  --primary-color: #131313;
+  --primary-hover-color: #2d2d2d;
+  --secondary-color: #ff4040;
+  --white-color: #fff;
+  --black-color: #131313;
+  --bs-shadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+  --hover-shadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+    0 0 15px 0 rgba(#000, 10%);
+}
+
+/** Стили для полноэкранного блока: */
+/*
+* (i) Стили будут применяться ко
+* всем классам содержащим *__container
+* Например header__container, main__container и т.д.
+*/
+[class*=__container] {
+  max-width: 76.875rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.gallery__wrapper [class*=__container] {
+  max-width: 100%;
+  padding: 1.25rem 5vw;
+}
+.header-is-sticky .gallery__wrapper [class*=__container] {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+@media (max-width: 62em) {
+  .gallery__wrapper [class*=__container] {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  object-fit: contain;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /** Поменять на clip - если используется в проекте position: sticky */
+  overflow: hidden;
+}
+
+.page {
+  position: relative;
+  flex: 1 1 auto;
+}
+.page [data-observ] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background: transparent;
+  pointer-events: none;
+}
+.page_start {
+  padding-top: 6.25rem;
+}

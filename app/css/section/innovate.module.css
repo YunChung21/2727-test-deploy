@@ -1,0 +1,97 @@
+@import "../config/fonts.module.css";
+.innovative {
+  padding: 6.875rem 0 7.5rem;
+  padding: 5.9375rem 0 2.8125rem;
+}
+
+.innovative__container {
+  composes: container from "../config/common.module.css";
+}
+.innovative__subtitle {
+  color: #db5e5e;
+  font-family: AcierBAT;
+  font-size: 33.6px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media (max-width: 62em) {
+  .innovative__subtitle {
+    font-size: 1.5rem;
+  }
+}
+.innovative__title {
+  color: #140a01;
+  font-family: AcierBAT;
+  font-size: 72.075px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72.5px;
+  text-transform: uppercase;
+  margin-top: 0.9375rem;
+}
+@media (max-width: 62em) {
+  .innovative__title {
+    font-size: 2rem;
+  }
+}
+.innovative__block {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 0.875rem;
+  row-gap: 3.125rem;
+}
+@media (max-width: 62em) {
+  .innovative__block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 31.25em) {
+  .innovative__block {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+}
+.innovative__box {
+  background: #f5f4f5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.innovative__box-img {
+  height: 9.6875rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.innovative__box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.innovative__box-icon {
+  position: absolute;
+  bottom: 0;
+  left: 1.875rem;
+  max-width: 4.8125rem;
+  height: auto !important;
+}
+@media (max-width: 31.25em) {
+  .innovative__box-icon {
+    max-width: 4.375rem;
+  }
+}
+.innovative__box-title {
+  margin: 0.5rem auto 0.9375rem;
+  text-align: center;
+  color: #140a01;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+  max-width: 13.125rem;
+}
+.innovative__box-title strong {
+  font-weight: 700;
+}

@@ -1,0 +1,65 @@
+/* Шаблоны (заготовки)
+* @extend %имя шаблона;
+*/
+
+.container {
+  max-width: 76.875rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main__btn {
+  font-family: AktivGrotesk;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.288px;
+  border-radius: 6.4px;
+  background: #db5e5e;
+  padding: 1rem 1.75rem;
+  color: #fff;
+  transition: all 0.5s;
+}
+.main__btn:hover {
+  opacity: 0.8;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  gap: 1.5625rem;
+}
+
+.social__item {
+  max-width: 1.25rem;
+}
+
+.social__link svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-open .social__link svg {
+  fill: #000;
+}
+.menu-open .social__link svg path {
+  fill: #000;
+}
+.header-is-sticky .social__link svg {
+  fill: #000;
+}
+.header-is-sticky .social__link svg path {
+  fill: #000;
+}
+.gallery__wrapper .social__link svg {
+  fill: #000;
+}
+.gallery__wrapper .social__link svg path {
+  fill: #000;
+}

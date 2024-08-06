@@ -1,0 +1,71 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 31.25em) {
+  .navigation {
+    justify-content: center;
+    gap: 1.125rem;
+    margin-top: 1.5rem;
+  }
+}
+.navigation .swiper-button-prev,
+.navigation .swiper-button-next {
+  opacity: 0.7;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0.625rem;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.rooms {
+  background: #db5e5e;
+}
+
+.reviews {
+  background: white;
+}
+
+@media (max-width: 31.25em) {
+  .navigation .swiper-button-prev,
+  .navigation .swiper-button-next {
+    position: static;
+    transform: translateY(0);
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+  }
+}
+.navigation .swiper-button-prev svg,
+.navigation .swiper-button-next svg {
+  max-width: 100%;
+  height: auto;
+}
+.navigation .swiper-button-prev:hover,
+.navigation .swiper-button-next:hover {
+  opacity: 1;
+}
+.navigation .swiper-button-prev {
+  left: 6.25rem;
+  transform: translateY(-50%);
+}
+@media (max-width: 31.25em) {
+  .navigation .swiper-button-prev {
+    transform: translateY(0);
+  }
+}
+.navigation .swiper-button-next {
+  transform: translateY(-50%);
+  right: 6.25rem;
+}
+@media (max-width: 31.25em) {
+  .navigation .swiper-button-next {
+    transform: translateY(0);
+  }
+}

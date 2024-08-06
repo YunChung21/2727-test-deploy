@@ -1,0 +1,59 @@
+@import "../config/fonts.module.css";
+.dedicated {
+  position: relative;
+  padding: 15.625rem 0 10.9375rem;
+}
+@media (max-width: 62em) {
+  .dedicated {
+    padding: 5rem 0 15.9375rem;
+  }
+}
+
+.dedicated__container {
+  composes: container from "../config/common.module.css";
+}
+.dedicated__bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.dedicated__bg img {
+  object-fit: cover;
+  object-position: center right;
+  height: 100%;
+  width: 100%;
+}
+.dedicated__title {
+  color: #fff;
+  font-family: AcierBAT;
+  font-size: 78.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  text-transform: lowercase;
+  max-width: 40.3125rem;
+}
+@media (max-width: 62em) {
+  .dedicated__title {
+    font-size: 45px;
+  }
+}
+.dedicated__subtitle {
+  color: #fff;
+  font-family: AcierBAT;
+  font-size: 33.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  text-transform: lowercase;
+  max-width: 19.375rem;
+}
+@media (max-width: 62em) {
+  .dedicated__subtitle {
+    font-size: 28px;
+    max-width: 16.25rem;
+  }
+}

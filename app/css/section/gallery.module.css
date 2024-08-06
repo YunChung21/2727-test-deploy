@@ -1,0 +1,41 @@
+.gallery {
+  margin-top: 12.5rem;
+}
+
+.gallery__container {
+  composes: container from "../config/common.module.css";
+}
+
+.gallery__block {
+  column-count: 2;
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+  writing-mode: horizontal-tb;
+  /* Добавьте это свойство для изменения направления на слева направо */
+}
+@media (max-width: 62em) {
+  .gallery__block {
+    column-gap: 0.625rem;
+    row-gap: 0.625rem;
+  }
+}
+.gallery__box {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+@media (max-width: 62em) {
+  .gallery__box {
+    margin-bottom: 0.625rem;
+  }
+}
+.gallery__box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  transition: all 0.2s;
+}
+.gallery__box img.loaded {
+  opacity: 1;
+}

@@ -1,0 +1,56 @@
+@import "../config/fonts.module.css";
+.plans {
+  background: #f5f4f5;
+  padding: 1.25rem 0 5rem;
+}
+
+.plans__container {
+  composes: container from "../config/common.module.css";
+}
+.plans__block {
+  border-top: #140a01 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+.plans__title {
+  color: #140a01;
+  font-family: AcierBAT;
+  font-size: 67.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 62em) {
+  .plans__title {
+    font-size: 38.7px;
+  }
+}
+@media (max-width: 47.9375em) {
+  .plans__title {
+    position: relative;
+    padding: 1.25rem 0;
+    text-align: center;
+  }
+}
+.plans__img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
+}
+.plans__btn {
+  margin: 1.875rem auto 0;
+  display: flex;
+  max-width: max-content;
+}
+@media (max-width: 47.9375em) {
+  .plans__btn {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
