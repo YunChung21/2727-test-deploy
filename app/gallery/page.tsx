@@ -16,7 +16,7 @@ const Gallery: React.FC = () => {
         galleryText="Gallery"
         phoneLink="(438) 796-0017"
         phoneText="Call Us: (438) 796-0017"
-        buttonLink="/contact"
+        buttonLink="contacts"
         buttonText="Get A Quote"
         black={true}
       />

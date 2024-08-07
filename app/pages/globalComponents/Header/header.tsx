@@ -1,8 +1,8 @@
 "use client";
-
 import React from "react";
 import styles from "../../../css/components/header.module.css";
 import commonStyles from "../../../css/config/common.module.css";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 type HeaderProps = {
@@ -28,6 +28,7 @@ const Header: React.FC<HeaderProps> = ({
   buttonText,
   black = false,
 }) => {
+  const router = useRouter();
   const [scroll, setScroll] = useState(false);
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
@@ -60,8 +61,29 @@ const Header: React.FC<HeaderProps> = ({
     };
   }, [hamburgerOpen]);
 
+  //for scrolling to item smoothly
   const scrollToElement = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(id);
+    if (element) {
+      if (hamburgerOpen) {
+        setHamburgerOpen(!hamburgerOpen);
+      }
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  //checking whether the item is on the page or not, and scroll to the item
+  const handleButtonClick = async (id: string) => {
+    if (typeof window !== "undefined") {
+      const currentPath = window.location.pathname;
+
+      if (currentPath === "/") {
+        // If on the same page, scroll directly
+        scrollToElement(id);
+      } else {
+        await router.push(`/#${id}`);
+      }
+    }
   };
 
   return (
@@ -158,7 +180,7 @@ const Header: React.FC<HeaderProps> = ({
           </ul>
           <a
             className={`${commonStyles.main__btn} ${styles.header__btn}`}
-            onClick={() => scrollToElement(buttonLink)}
+            onClick={() => handleButtonClick(buttonLink)}
           >
             {buttonText}
           </a>
