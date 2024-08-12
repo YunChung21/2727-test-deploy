@@ -1,8 +1,35 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "../../../css/section/hero.module.css";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Hero: React.FC = () => {
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const el = imgRef.current;
+    if (el) {
+      gsap.fromTo(
+        el,
+        { xPercent: -15 }, // Start position
+        {
+          xPercent: 0, // End position
+          duration: 1,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 100%",
+            end: "bottom 0%",
+            scrub: true,
+            //markers: true, // Optional: to help debug
+          },
+        }
+      );
+    }
+  }, []);
+
   const scrollToElement = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -11,7 +38,7 @@ const Hero: React.FC = () => {
     <>
       <div className={styles.hero}>
         <div className={styles.hero__background}>
-          <img src="images/hero.jpeg" alt="" loading="lazy"></img>
+          <img ref={imgRef} src="images/hero.jpeg" alt="" loading="lazy"></img>
         </div>
         <div className={styles.hero__container}>
           <h2 className={styles.hero__suptitle}>High-End Coworking Offices</h2>
