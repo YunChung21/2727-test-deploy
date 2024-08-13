@@ -17,9 +17,6 @@
     0 0 15px 0 rgba(#000, 10%);
 }
 
-/* Шаблоны (заготовки)
-* @extend %имя шаблона;
-*/
 :root {
   --bs-font-family: "Cabin", sans-serif;
   --bs-font-size: 16px;

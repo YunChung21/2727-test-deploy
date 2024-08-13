@@ -1,16 +1,7 @@
-/* Шаблоны (заготовки)
-* @extend %имя шаблона;
-*/
-
 .container {
   max-width: 76.875rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
-}
-
-.img {
-  max-width: 100%;
-  height: auto;
 }
 
 .main__btn {
@@ -26,6 +17,7 @@
   color: #fff;
   transition: all 0.5s;
 }
+
 .main__btn:hover {
   opacity: 0.8;
 }
@@ -43,23 +35,4 @@
 .social__link svg {
   max-width: 100%;
   height: auto;
-}
-
-.menu-open .social__link svg {
-  fill: #000;
-}
-.menu-open .social__link svg path {
-  fill: #000;
-}
-.header-is-sticky .social__link svg {
-  fill: #000;
-}
-.header-is-sticky .social__link svg path {
-  fill: #000;
-}
-.gallery__wrapper .social__link svg {
-  fill: #000;
-}
-.gallery__wrapper .social__link svg path {
-  fill: #000;
 }

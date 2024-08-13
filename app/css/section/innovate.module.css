@@ -1,4 +1,5 @@
 @import "../config/fonts.module.css";
+
 .innovative {
   padding: 6.875rem 0 7.5rem;
   padding: 5.9375rem 0 2.8125rem;
@@ -7,6 +8,7 @@
 .innovative__container {
   composes: container from "../config/common.module.css";
 }
+
 .innovative__subtitle {
   color: #db5e5e;
   font-family: AcierBAT;

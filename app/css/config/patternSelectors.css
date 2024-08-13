@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/* Шаблоны (заготовки)
-* @extend %имя шаблона;
-*/
 :root {
   --bs-font-family: "Cabin", sans-serif;
   --bs-font-size: 16px;
