@@ -10,7 +10,7 @@ const Gallery: React.FC = () => {
   return (
     <>
       <Header
-        langLink="/fr/"
+        langLink="/fr"
         langText="FR"
         galleryLink="/gallery"
         galleryText="Gallery"
@@ -31,6 +31,7 @@ const Gallery: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

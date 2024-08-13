@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -53,12 +51,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/**
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-
+**/
 .gallery__wrapper [class*="__container"] {
   max-width: 100%;
   padding: 1.25rem 5vw;

@@ -1,5 +1,4 @@
 import Header from "../globalComponents/Header/header";
-import Footer from "../globalComponents/Footer/footer";
 import Hero from "../globalComponents/HomepageContent/hero";
 import Contacts from "../globalComponents/HomepageContent/contacts";
 import Rooms from "../globalComponents/HomepageContent/rooms";
@@ -7,12 +6,13 @@ import Plans from "../globalComponents/HomepageContent/plans";
 import Innovative from "../globalComponents/HomepageContent/innovative";
 import Reviews from "../globalComponents/HomepageContent/reviews";
 import Dedicated from "../globalComponents/HomepageContent/dedicated";
+import Footer from "../globalComponents/Footer/footer";
 
 const HomePage = () => {
   return (
     <>
       <Header
-        langLink="/fr/"
+        langLink="/fr"
         langText="FR"
         galleryLink="/gallery"
         galleryText="Gallery"
@@ -29,6 +29,7 @@ const HomePage = () => {
       <Innovative />
       <Reviews />
       <Dedicated />
+      <Footer />
     </>
   );
 };
