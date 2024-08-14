@@ -42,47 +42,6 @@
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  opacity: 0.7;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  padding: 0.625rem;
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-@media (max-width: 31.25em) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    position: static;
-    transform: translateY(0);
-    width: 40px;
-    height: 40px;
-    opacity: 1;
-  }
-}
-
-.swiper-button-prev {
-  left: 6.25rem;
-  transform: translateY(-50%);
-}
-
-.swiper-button-next {
-  right: 6.25rem;
-  transform: translateY(-50%);
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  opacity: 1;
-}
-
 .reviews__wrapper {
   margin-top: 4.375rem;
 }

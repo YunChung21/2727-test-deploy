@@ -116,9 +116,6 @@
 .header-is-sticky .menu__link {
   color: #000;
 }
-.gallery__wrapper .header .menu__link {
-  color: #000;
-}
 
 .social__list {
   display: flex;
@@ -207,12 +204,6 @@
   .menu-open .icon-menu span,
   .menu-open .icon-menu::before,
   .menu-open .icon-menu::after {
-    background-color: #000;
-  }
-
-  .gallery__wrapper .icon-menu span,
-  .gallery__wrapper .icon-menu::before,
-  .gallery__wrapper .icon-menu::after {
     background-color: #000;
   }
 
