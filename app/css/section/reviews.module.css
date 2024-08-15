@@ -36,6 +36,7 @@
   line-height: 1.25;
   text-transform: uppercase;
 }
+
 @media (max-width: 47.9375em) {
   .reviews__title {
     font-size: 1.75rem;

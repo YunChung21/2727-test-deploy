@@ -18,13 +18,14 @@ const Contacts: React.FC = () => {
         <div className={styles.contacts__container}>
           <div className={styles.contacts__block}>
             <h2 className={styles.contacts__title}>
-              Jetez un coup d'oeil à notre espace de coworking.
+              Jetez un coup d&rsquo;OEil &agrave; notre espace de coworking.
             </h2>
             <p className={styles.contacts__text}>
-              Situé au bord du canal de Lachine, au cœur de Griffintown et à
-              proximité du marché Atwater, le 2727 Co-Working offre un espace à
-              la fois moderne et chaleureux vous permettant d'obtenir un bureau
-              accessible 24/7 tout en profitant d'une communauté d'entreprises
+              Situ&eacute; au bord du canal de Lachine, au cœur de Griffintown
+              et &agrave; proximit&eacute; du march&eacute; Atwater, le 2727
+              Co-Working offre un espace &agrave; la fois moderne et chaleureux
+              vous permettant d&rsquo;obtenir un bureau accessible 24/7 tout en
+              profitant d&rsquo;une communaut&eacute; d&rsquo;entreprises
               innovantes autour de vous !
             </p>
             <form

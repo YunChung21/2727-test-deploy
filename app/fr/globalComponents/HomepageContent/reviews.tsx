@@ -1,7 +1,7 @@
 "use client";
-
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import styles from "../../../css/section/reviews.module.css";
 import navigationButtonStyles from "../../../css/components/navigationButton.module.css";
 import "swiper/css";
@@ -11,11 +11,17 @@ const Reviews: React.FC = () => {
     <>
       <div className={styles.reviews}>
         <div className={styles.reviews__bg}>
-          <img src="images/about.png" alt="" loading="lazy" />
+          <Image
+            src={"/images/about.png"}
+            alt={"backgrpung Image"}
+            width={500}
+            height={300}
+            loading="lazy"
+          />
         </div>
         <div className={styles.reviews__container}>
           <h2 className={styles.reviews__title}>
-            Ce qu'ils disent de nous <br /> de nous !
+            Ce qu&rsquo;ils disent de nous <br /> de nous !
           </h2>
           <div className={styles.reviews__slider}>
             <Swiper
@@ -40,42 +46,43 @@ const Reviews: React.FC = () => {
             >
               <SwiperSlide className={styles.reviews__box}>
                 <p className={styles["reviews__box-text"]}>
-                  "Propre et moderne, bien géré et bien équipé, avec un
+                  &quot;Propre et moderne, bien géré et bien équipé, avec un
                   emplacement exceptionnel sur le canal en face du marché
-                  Atwater. Bonne ambiance."
+                  Atwater. Bonne ambiance.&quot;
                 </p>
                 <p className={styles["reviews__box-name"]}>- Phil Kurtz</p>
               </SwiperSlide>
               <SwiperSlide className={styles.reviews__box}>
                 <p className={styles["reviews__box-text"]}>
-                  "2727 coworking a des locaux très propres, et tous les membres
-                  sont si sympathiques et ouverts d'esprit ! De plus, il est
-                  très facile de s'y rendre en utilisant les transports en
-                  commun. Les installations sont très bien entretenues, c'est un
-                  espace de travail très accommodant avec tout ce dont vous avez
-                  besoin ! Je le recommande vivement !"
+                  &quot;2727 coworking a des locaux très propres, et tous les
+                  membres sont si sympathiques et ouverts d&rsquo;esprit ! De
+                  plus, il est très facile de s&rsquo;y rendre en utilisant les
+                  transports en commun. Les installations sont très bien
+                  entretenues, c&rsquo;est un espace de travail très accommodant
+                  avec tout ce dont vous avez besoin ! Je le recommande vivement
+                  !&quot;
                 </p>
                 <p className={styles["reviews__box-name"]}>- Kelly Hanson</p>
               </SwiperSlide>
               <SwiperSlide className={styles.reviews__box}>
                 <p className={styles["reviews__box-text"]}>
-                  "Un endroit génial et très pratique à atteindre. Toujours très
-                  propre et tout le monde est super sympa !".
+                  &quot;Un endroit génial et très pratique à atteindre. Toujours
+                  très propre et tout le monde est super sympa !&quot;.
                 </p>
                 <p className={styles["reviews__box-name"]}>- Jules Garufi</p>
               </SwiperSlide>
               <SwiperSlide className={styles.reviews__box}>
                 <p className={styles["reviews__box-text"]}>
-                  "Bel endroit confortable près du canal de Lachine qui offre
-                  d'excellentes commodités et un lieu de travail très amical et
-                  professionnel. J'ai adoré !"
+                  &quot;Bel endroit confortable près du canal de Lachine qui
+                  offre d&rsquo;excellentes commodités et un lieu de travail
+                  très amical et professionnel. J&rsquo;ai adoré !&quot;
                 </p>
                 <p className={styles["reviews__box-name"]}>- Dima</p>
               </SwiperSlide>
               <SwiperSlide className={styles.reviews__box}>
                 <p className={styles["reviews__box-text"]}>
-                  "Je ne pourrais pas être plus heureux d'avoir rejoint le 2727
-                  coworking !"
+                  &quot;Je ne pourrais pas être plus heureux d&rsquo;avoir
+                  rejoint le 2727 coworking !&quot;
                 </p>
                 <p className={styles["reviews__box-name"]}>
                   - Avedis Tufenkdjian
@@ -83,8 +90,8 @@ const Reviews: React.FC = () => {
               </SwiperSlide>
               <SwiperSlide className={styles.reviews__box}>
                 <p className={styles["reviews__box-text"]}>
-                  "Un endroit génial pour travailler, le meilleur coworking dans
-                  lequel j'ai travaillé."
+                  &quot;Un endroit génial pour travailler, le meilleur coworking
+                  dans lequel j&rsquo;ai travaillé.&quot;
                 </p>
                 <p className={styles["reviews__box-name"]}>- Jesus Hernandez</p>
               </SwiperSlide>

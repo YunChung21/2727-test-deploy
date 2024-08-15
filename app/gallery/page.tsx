@@ -25,7 +25,7 @@ const Gallery: React.FC = () => {
           <div className={styles.gallery__block} id="galleryBlock">
             {imageGallery.map((image: ImageData, index: number) => (
               <div className={styles.gallery__box} key={index}>
-                <Image src={image.src} alt={image.alt} />
+                <Image src={image.src} alt={image.alt} loading="lazy" />
               </div>
             ))}
           </div>

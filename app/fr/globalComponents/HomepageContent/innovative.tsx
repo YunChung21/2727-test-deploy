@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../../css/section/innovate.module.css";
+import Image from "next/image";
 
 const Innovative: React.FC = () => {
   return (
@@ -13,11 +14,19 @@ const Innovative: React.FC = () => {
           <div className={styles.innovative__block}>
             <div className={styles.innovative__box}>
               <div className={styles["innovative__box-img"]}>
-                <img src="images/innovate/1.jpeg" alt="" loading="lazy" />
-                <img
-                  src="images/innovate/icon1.png"
+                <Image
+                  src="/images/innovate/1.jpeg"
                   alt=""
                   loading="lazy"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  src="/images/innovate/icon1.png"
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
                   className={styles["innovative__box-icon"]}
                 />
               </div>
@@ -27,11 +36,19 @@ const Innovative: React.FC = () => {
             </div>
             <div className={styles.innovative__box}>
               <div className={styles["innovative__box-img"]}>
-                <img src="images/innovate/2.jpeg" alt="" loading="lazy" />
-                <img
-                  src="images/innovate/icon2.png"
+                <Image
+                  src="/images/innovate/2.jpeg"
                   alt=""
                   loading="lazy"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  src="/images/innovate/icon2.png"
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
                   className={styles["innovative__box-icon"]}
                 />
               </div>
@@ -41,11 +58,19 @@ const Innovative: React.FC = () => {
             </div>
             <div className={styles.innovative__box}>
               <div className={styles["innovative__box-img"]}>
-                <img src="images/innovate/3.jpeg" alt="" loading="lazy" />
-                <img
-                  src="images/innovate/icon3.png"
+                <Image
+                  src="/images/innovate/3.jpeg"
                   alt=""
                   loading="lazy"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  src="/images/innovate/icon3.png"
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
                   className={styles["innovative__box-icon"]}
                 />
               </div>
@@ -55,11 +80,19 @@ const Innovative: React.FC = () => {
             </div>
             <div className={styles.innovative__box}>
               <div className={styles["innovative__box-img"]}>
-                <img src="images/innovate/4.jpeg" alt="" loading="lazy" />
-                <img
-                  src="images/innovate/icon4.png"
+                <Image
+                  src="/images/innovate/4.jpeg"
                   alt=""
                   loading="lazy"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  src="/images/innovate/icon4.png"
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
                   className={styles["innovative__box-icon"]}
                 />
               </div>
@@ -69,11 +102,19 @@ const Innovative: React.FC = () => {
             </div>
             <div className={styles.innovative__box}>
               <div className={styles["innovative__box-img"]}>
-                <img src="images/innovate/5.jpeg" alt="" loading="lazy" />
-                <img
-                  src="images/innovate/icon5.png"
+                <Image
+                  src="/images/innovate/5.jpeg"
                   alt=""
                   loading="lazy"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  src="/images/innovate/icon5.png"
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
                   className={styles["innovative__box-icon"]}
                 />
               </div>
@@ -83,11 +124,19 @@ const Innovative: React.FC = () => {
             </div>
             <div className={styles.innovative__box}>
               <div className={styles["innovative__box-img"]}>
-                <img src="images/innovate/6.jpeg" alt="" loading="lazy" />
-                <img
-                  src="images/innovate/icon6.png"
+                <Image
+                  src="/images/innovate/6.jpeg"
                   alt=""
                   loading="lazy"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  src="/images/innovate/icon6.png"
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
                   className={styles["innovative__box-icon"]}
                 />
               </div>
@@ -97,11 +146,19 @@ const Innovative: React.FC = () => {
             </div>
             <div className={styles.innovative__box}>
               <div className={styles["innovative__box-img"]}>
-                <img src="images/innovate/7.jpeg" alt="" loading="lazy" />
-                <img
-                  src="images/innovate/icon7.png"
+                <Image
+                  src="/images/innovate/7.jpeg"
                   alt=""
                   loading="lazy"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  src="/images/innovate/icon7.png"
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
                   className={styles["innovative__box-icon"]}
                 />
               </div>
@@ -111,16 +168,25 @@ const Innovative: React.FC = () => {
             </div>
             <div className={styles.innovative__box}>
               <div className={styles["innovative__box-img"]}>
-                <img src="images/innovate/8.jpeg" alt="" loading="lazy" />
-                <img
-                  src="images/innovate/icon8.png"
+                <Image
+                  src="/images/innovate/8.jpeg"
                   alt=""
                   loading="lazy"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  src="/images/innovate/icon8.png"
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
                   className={styles["innovative__box-icon"]}
                 />
               </div>
               <h4 className={styles["innovative__box-title"]}>
-                Espace <strong>sécurisé</strong> par système d'alarme et caméras
+                Espace <strong>sécurisé</strong> par système d&rsquo;alarme et
+                caméras
               </h4>
             </div>
           </div>

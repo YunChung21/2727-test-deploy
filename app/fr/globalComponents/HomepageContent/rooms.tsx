@@ -1,11 +1,12 @@
 "use client";
-
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "../../../css/section/rooms.module.css";
 import navigationButtonStyles from "../../../css/components/navigationButton.module.css";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
+import Image from "next/image";
+
 const Rooms: React.FC = () => {
   const scrollToElement = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -29,7 +30,13 @@ const Rooms: React.FC = () => {
           >
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/7.png" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/7.png"}
+                  alt={""}
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>1 PERSONNE HOTDESK</h3>
               <p className={styles["rooms__box-price"]}>300$/ par mois</p>
@@ -42,7 +49,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/2.png" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/2.png"}
+                  alt={""}
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 Bureau dédié à 1 personne
@@ -57,7 +70,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/1.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/1.jpeg"}
+                  alt={""}
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 Bureau fermé pour 1 personne
@@ -72,7 +91,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/3.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/3.jpeg"}
+                  alt={""}
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 Bureau fermé pour 3 personnese
@@ -87,7 +112,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/4.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/4.jpeg"}
+                  alt={""}
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 Bureau fermé pour 4 personnes
@@ -102,7 +133,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/5.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/5.jpeg"}
+                  alt={""}
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 Bureau fermé pour 8 personnes
@@ -117,7 +154,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/6.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/6.jpeg"}
+                  alt={""}
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 Bureau fermé pour 10 personnes

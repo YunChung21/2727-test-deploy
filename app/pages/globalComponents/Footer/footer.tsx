@@ -1,16 +1,19 @@
 import React from "react";
 import styles from "../../../css/components/footer.module.css";
 import commonStyles from "../../../css/config/common.module.css";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
     <>
       <footer className={styles.footer}>
         <div className={styles.footer__container}>
-          <img
-            src="images/logo.png"
-            alt=""
+          <Image
+            src={"/images/logo.png"}
+            alt="logo"
             loading="lazy"
+            width={300}
+            height={300}
             className={styles.footer__logo}
           />
           <h2 className={styles.footer__title}>
