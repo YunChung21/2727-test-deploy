@@ -23,80 +23,78 @@ const Reviews: React.FC = () => {
           <h2 className={styles.reviews__title}>
             Ce qu&rsquo;ils disent de nous <br /> de nous !
           </h2>
-          <div className={styles.reviews__slider}>
-            <Swiper
-              className={styles.reviews__wrapper}
-              loop={true}
-              slidesPerView={3}
-              centeredSlides={true}
-              spaceBetween={60}
-              navigation={{
-                nextEl: `.${navigationButtonStyles["swiper-button-next"]}`,
-                prevEl: `.${navigationButtonStyles["swiper-button-prev"]}`,
-              }}
-              breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                },
-                767: {
-                  slidesPerView: 3,
-                },
-              }}
-              modules={[Navigation]}
-            >
-              <SwiperSlide className={styles.reviews__box}>
-                <p className={styles["reviews__box-text"]}>
-                  &quot;Propre et moderne, bien géré et bien équipé, avec un
-                  emplacement exceptionnel sur le canal en face du marché
-                  Atwater. Bonne ambiance.&quot;
-                </p>
-                <p className={styles["reviews__box-name"]}>- Phil Kurtz</p>
-              </SwiperSlide>
-              <SwiperSlide className={styles.reviews__box}>
-                <p className={styles["reviews__box-text"]}>
-                  &quot;2727 coworking a des locaux très propres, et tous les
-                  membres sont si sympathiques et ouverts d&rsquo;esprit ! De
-                  plus, il est très facile de s&rsquo;y rendre en utilisant les
-                  transports en commun. Les installations sont très bien
-                  entretenues, c&rsquo;est un espace de travail très accommodant
-                  avec tout ce dont vous avez besoin ! Je le recommande vivement
-                  !&quot;
-                </p>
-                <p className={styles["reviews__box-name"]}>- Kelly Hanson</p>
-              </SwiperSlide>
-              <SwiperSlide className={styles.reviews__box}>
-                <p className={styles["reviews__box-text"]}>
-                  &quot;Un endroit génial et très pratique à atteindre. Toujours
-                  très propre et tout le monde est super sympa !&quot;.
-                </p>
-                <p className={styles["reviews__box-name"]}>- Jules Garufi</p>
-              </SwiperSlide>
-              <SwiperSlide className={styles.reviews__box}>
-                <p className={styles["reviews__box-text"]}>
-                  &quot;Bel endroit confortable près du canal de Lachine qui
-                  offre d&rsquo;excellentes commodités et un lieu de travail
-                  très amical et professionnel. J&rsquo;ai adoré !&quot;
-                </p>
-                <p className={styles["reviews__box-name"]}>- Dima</p>
-              </SwiperSlide>
-              <SwiperSlide className={styles.reviews__box}>
-                <p className={styles["reviews__box-text"]}>
-                  &quot;Je ne pourrais pas être plus heureux d&rsquo;avoir
-                  rejoint le 2727 coworking !&quot;
-                </p>
-                <p className={styles["reviews__box-name"]}>
-                  - Avedis Tufenkdjian
-                </p>
-              </SwiperSlide>
-              <SwiperSlide className={styles.reviews__box}>
-                <p className={styles["reviews__box-text"]}>
-                  &quot;Un endroit génial pour travailler, le meilleur coworking
-                  dans lequel j&rsquo;ai travaillé.&quot;
-                </p>
-                <p className={styles["reviews__box-name"]}>- Jesus Hernandez</p>
-              </SwiperSlide>
-            </Swiper>
-          </div>
+          <Swiper
+            className={styles.reviews__wrapper}
+            loop={true}
+            slidesPerView={1}
+            centeredSlides={true}
+            spaceBetween={60}
+            navigation={{
+              nextEl: `.${navigationButtonStyles["swiper-button-next"]}`,
+              prevEl: `.${navigationButtonStyles["swiper-button-prev"]}`,
+            }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+              },
+              767: {
+                slidesPerView: 3,
+              },
+            }}
+            modules={[Navigation]}
+          >
+            <SwiperSlide className={styles.reviews__box}>
+              <p className={styles["reviews__box-text"]}>
+                &quot;Propre et moderne, bien géré et bien équipé, avec un
+                emplacement exceptionnel sur le canal en face du marché Atwater.
+                Bonne ambiance.&quot;
+              </p>
+              <p className={styles["reviews__box-name"]}>- Phil Kurtz</p>
+            </SwiperSlide>
+            <SwiperSlide className={styles.reviews__box}>
+              <p className={styles["reviews__box-text"]}>
+                &quot;2727 coworking a des locaux très propres, et tous les
+                membres sont si sympathiques et ouverts d&rsquo;esprit ! De
+                plus, il est très facile de s&rsquo;y rendre en utilisant les
+                transports en commun. Les installations sont très bien
+                entretenues, c&rsquo;est un espace de travail très accommodant
+                avec tout ce dont vous avez besoin ! Je le recommande vivement
+                !&quot;
+              </p>
+              <p className={styles["reviews__box-name"]}>- Kelly Hanson</p>
+            </SwiperSlide>
+            <SwiperSlide className={styles.reviews__box}>
+              <p className={styles["reviews__box-text"]}>
+                &quot;Un endroit génial et très pratique à atteindre. Toujours
+                très propre et tout le monde est super sympa !&quot;.
+              </p>
+              <p className={styles["reviews__box-name"]}>- Jules Garufi</p>
+            </SwiperSlide>
+            <SwiperSlide className={styles.reviews__box}>
+              <p className={styles["reviews__box-text"]}>
+                &quot;Bel endroit confortable près du canal de Lachine qui offre
+                d&rsquo;excellentes commodités et un lieu de travail très amical
+                et professionnel. J&rsquo;ai adoré !&quot;
+              </p>
+              <p className={styles["reviews__box-name"]}>- Dima</p>
+            </SwiperSlide>
+            <SwiperSlide className={styles.reviews__box}>
+              <p className={styles["reviews__box-text"]}>
+                &quot;Je ne pourrais pas être plus heureux d&rsquo;avoir rejoint
+                le 2727 coworking !&quot;
+              </p>
+              <p className={styles["reviews__box-name"]}>
+                - Avedis Tufenkdjian
+              </p>
+            </SwiperSlide>
+            <SwiperSlide className={styles.reviews__box}>
+              <p className={styles["reviews__box-text"]}>
+                &quot;Un endroit génial pour travailler, le meilleur coworking
+                dans lequel j&rsquo;ai travaillé.&quot;
+              </p>
+              <p className={styles["reviews__box-name"]}>- Jesus Hernandez</p>
+            </SwiperSlide>
+          </Swiper>
           <div className={navigationButtonStyles.navigation}>
             <div
               className={`${navigationButtonStyles.reviews} ${navigationButtonStyles["swiper-button-prev"]}`}
