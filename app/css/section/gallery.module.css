@@ -11,7 +11,6 @@
   column-gap: 1.25rem;
   row-gap: 1.25rem;
   writing-mode: horizontal-tb;
-  /* Добавьте это свойство для изменения направления на слева направо */
 }
 @media (max-width: 62em) {
   .gallery__block {

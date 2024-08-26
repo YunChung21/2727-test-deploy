@@ -19,13 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-MR8V52R" />
       <body>
-        <GoogleTagManager gtmId="GTM-MR8V52R" />
-        <body>
-          <Transition>{children}</Transition>
-        </body>
-        <GoogleAnalytics gaId="AW-697289382" />
+        <Transition>{children}</Transition>
       </body>
+      <GoogleAnalytics gaId="AW-697289382" />
     </html>
   );
 }

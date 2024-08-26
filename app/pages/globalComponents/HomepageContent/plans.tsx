@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 import styles from "../../../css/section/plans.module.css";
+import Image from "next/image";
 
 const Plans: React.FC = () => {
   const router = useRouter();
@@ -15,10 +16,12 @@ const Plans: React.FC = () => {
         <div className={styles.plans__container}>
           <div className={styles.plans__block}>
             <h2 className={styles.plans__title}>plan of the office</h2>
-            <img
-              src="images/plans.png"
-              alt=""
-              loading="lazy"
+            <Image
+              src={"/images/plans.png"}
+              alt={"image for the plan of the office"}
+              loading={"lazy"}
+              width={500}
+              height={500}
               className={styles.plans__img}
             />
             <button

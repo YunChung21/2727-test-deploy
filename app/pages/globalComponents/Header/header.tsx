@@ -4,6 +4,7 @@ import styles from "../../../css/components/header.module.css";
 import commonStyles from "../../../css/config/common.module.css";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 type HeaderProps = {
   langLink: string;
@@ -50,14 +51,14 @@ const Header: React.FC<HeaderProps> = ({
   //For prevent users from scrolling after open the hamburger menu
   useEffect(() => {
     if (hamburgerOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add(styles["no-scroll"]);
     } else {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove(styles["no-scroll"]);
     }
 
     // Cleanup function to reset overflow when component unmounts or hamburgerOpen changes
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove(styles["no-scroll"]);
     };
   }, [hamburgerOpen]);
 
@@ -98,7 +99,13 @@ const Header: React.FC<HeaderProps> = ({
         }`}
       >
         <a href="/" className={styles.header__logo}>
-          <img src="images/logo.png" alt="Logo" loading="lazy" />
+          <Image
+            src={"/images/logo.png"}
+            alt={"header Logo"}
+            loading={"lazy"}
+            width={500}
+            height={500}
+          />
         </a>
         <nav className={styles.header__menu}>
           <ul className={styles.menu__list}>

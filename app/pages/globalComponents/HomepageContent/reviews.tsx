@@ -6,12 +6,20 @@ import styles from "../../../css/section/reviews.module.css";
 import navigationButtonStyles from "../../../css/components/navigationButton.module.css";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
+import Image from "next/image";
+
 const Reviews: React.FC = () => {
   return (
     <>
       <div className={styles.reviews}>
         <div className={styles.reviews__bg}>
-          <img src="images/about.png" alt="" loading="lazy" />
+          <Image
+            src={"/images/about.png"}
+            alt={"reviews background"}
+            loading={"lazy"}
+            width={500}
+            height={500}
+          />
         </div>
         <div className={styles.reviews__container}>
           <h2 className={styles.reviews__title}>
@@ -101,16 +109,16 @@ const Reviews: React.FC = () => {
                 <path
                   d="M8.10531 24.7425L1.73627 18.3734L8.10532 12.0044"
                   stroke="#DB5E5E"
-                  stroke-width="1.63636"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.63636"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M35.07 18.3784H2.7644"
                   stroke="#DB5E5E"
-                  stroke-width="1.63636"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.63636"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -127,16 +135,16 @@ const Reviews: React.FC = () => {
                 <path
                   d="M27.939 12.0044L34.3081 18.3734L27.939 24.7425"
                   stroke="#DB5E5E"
-                  stroke-width="1.63636"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.63636"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M0.974365 18.3691H33.28"
                   stroke="#DB5E5E"
-                  stroke-width="1.63636"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.63636"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>

@@ -31,6 +31,7 @@ const Contacts: React.FC = () => {
             <form
               action="https://us-central1-intuitioninbox.cloudfunctions.net/httpFormSubmit?webhook=2727coworking"
               method="POST"
+              id="contacts-form-french"
               className={styles.contacts__form}
               onSubmit={handleSubmit}
               target="_blank"

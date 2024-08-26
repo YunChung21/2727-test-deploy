@@ -6,6 +6,8 @@ import styles from "../../../css/section/rooms.module.css";
 import navigationButtonStyles from "../../../css/components/navigationButton.module.css";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
+import Image from "next/image";
+
 const Rooms: React.FC = () => {
   const scrollToElement = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -29,7 +31,13 @@ const Rooms: React.FC = () => {
           >
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/7.png" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/7.png"}
+                  alt={""}
+                  loading={"lazy"}
+                  width={500}
+                  height={300}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>1 PERSON HOTDESK</h3>
               <p className={styles["rooms__box-price"]}>$300/ Per Month</p>
@@ -42,7 +50,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/2.png" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/2.png"}
+                  alt={""}
+                  loading={"lazy"}
+                  width={500}
+                  height={300}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 1 Person Dedicated Desk
@@ -57,7 +71,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/1.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/1.jpeg"}
+                  alt={""}
+                  loading={"lazy"}
+                  width={500}
+                  height={300}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 1 Person Closed Office
@@ -72,7 +92,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/3.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/3.jpeg"}
+                  alt={""}
+                  loading={"lazy"}
+                  width={500}
+                  height={300}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 3 Person Closed Office
@@ -87,7 +113,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/4.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/4.jpeg"}
+                  alt={""}
+                  loading={"lazy"}
+                  width={500}
+                  height={300}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 4 Person Closed Office
@@ -102,7 +134,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/5.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/5.jpeg"}
+                  alt={""}
+                  loading={"lazy"}
+                  width={500}
+                  height={300}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 8 Person Closed Office
@@ -117,7 +155,13 @@ const Rooms: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.rooms__box}>
               <div className={styles["rooms__box-img"]}>
-                <img src="images/slider/6.jpeg" alt="" loading="lazy" />
+                <Image
+                  src={"/images/slider/6.jpeg"}
+                  alt={""}
+                  loading={"lazy"}
+                  width={500}
+                  height={300}
+                />
               </div>
               <h3 className={styles["rooms__box-title"]}>
                 10 Person Closed Office
@@ -145,16 +189,16 @@ const Rooms: React.FC = () => {
                 <path
                   d="M8.10531 25.4027L1.73627 19.0336L8.10532 12.6646"
                   stroke="white"
-                  stroke-width="1.63636"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.63636"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M35.07 19.0381H2.7644"
                   stroke="white"
-                  stroke-width="1.63636"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.63636"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -171,16 +215,16 @@ const Rooms: React.FC = () => {
                 <path
                   d="M27.939 12.6545L34.3081 19.0236L27.939 25.3926"
                   stroke="white"
-                  stroke-width="1.63636"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.63636"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M0.974365 19.0188H33.28"
                   stroke="white"
-                  stroke-width="1.63636"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.63636"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>

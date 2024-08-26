@@ -1,15 +1,40 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "../../../css/section/contacts.module.css";
 import { Turnstile, TurnstileInstance } from "@marsidev/react-turnstile";
+import { useRouter } from "next/navigation";
 
 const Contacts: React.FC = () => {
   const [canSubmit, setCanSubmit] = useState(false);
   const refTurnstile = useRef<TurnstileInstance>(null);
+  const router = useRouter();
 
   const handleSubmit = async () => {
     refTurnstile.current?.reset();
     console.log("submitted!");
+  };
+
+  const gtag_report_conversion = (url?: string) => {
+    var callback = function () {
+      if (typeof url != "undefined") {
+        router.push(url);
+      }
+    };
+    window.gtag("event", "conversion", {
+      send_to: "AW-697289382/w6N3CLr2m6UYEKaVv8wC",
+      event_callback: callback,
+    });
+    return false;
+  };
+  const handleConversion = () => {
+    console.log("test1");
+    gtag_report_conversion();
+    console.log("test2");
+    window.onload = function () {
+      console.log("test3");
+      window.lintrk("track", { conversion_id: 16308953 });
+    };
+    console.log("test4");
   };
 
   return (
@@ -30,6 +55,7 @@ const Contacts: React.FC = () => {
             <form
               action="https://us-central1-intuitioninbox.cloudfunctions.net/httpFormSubmit?webhook=2727coworking"
               method="POST"
+              id="contacts-form-english"
               className={styles.contacts__form}
               onSubmit={handleSubmit}
               target="_blank"
@@ -116,6 +142,7 @@ const Contacts: React.FC = () => {
                   backgroundColor: canSubmit ? "#db5e5e" : "#ccc",
                   cursor: canSubmit ? "pointer" : "not-allowed",
                 }}
+                onClick={() => handleConversion()}
               >
                 Book A Tour
               </button>

@@ -5,12 +5,11 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "../../../css/section/hero.module.css";
 import Image from "next/image";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Hero: React.FC = () => {
   const imgRef = useRef(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const el = imgRef.current;
     if (el) {
       gsap.fromTo(

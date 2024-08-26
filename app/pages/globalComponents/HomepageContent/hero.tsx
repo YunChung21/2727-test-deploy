@@ -3,13 +3,13 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "../../../css/section/hero.module.css";
-
-gsap.registerPlugin(ScrollTrigger);
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   const imgRef = useRef(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const el = imgRef.current;
     if (el) {
       gsap.fromTo(
@@ -38,7 +38,14 @@ const Hero: React.FC = () => {
     <>
       <div className={styles.hero}>
         <div className={styles.hero__background}>
-          <img ref={imgRef} src="images/hero.jpeg" alt="" loading="lazy"></img>
+          <Image
+            ref={imgRef}
+            src={"/images/hero.jpeg"}
+            alt={"hero background"}
+            loading={"lazy"}
+            width={500}
+            height={500}
+          />
         </div>
         <div className={styles.hero__container}>
           <h2 className={styles.hero__suptitle}>High-End Coworking Offices</h2>

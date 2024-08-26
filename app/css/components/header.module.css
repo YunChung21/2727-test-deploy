@@ -93,6 +93,10 @@
   gap: 1.5625rem;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header .menu__link br {
   display: none;
 }
