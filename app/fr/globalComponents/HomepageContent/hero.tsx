@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
             alt={"background Image"}
             width={500}
             height={300}
-            priority={true}
+            priority
           />
         </div>
         <div className={styles.hero__container}>

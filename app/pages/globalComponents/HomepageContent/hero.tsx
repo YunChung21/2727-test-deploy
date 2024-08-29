@@ -42,9 +42,9 @@ const Hero: React.FC = () => {
             ref={imgRef}
             src={"/images/hero.jpeg"}
             alt={"hero background"}
-            priority={true}
             width={500}
             height={500}
+            priority
           />
         </div>
         <div className={styles.hero__container}>
