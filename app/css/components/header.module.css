@@ -52,7 +52,7 @@
   .header__menu {
     pointer-events: none;
     transform: translateY(100%);
-    opacity: 0;
+    opacity: 0.01;
     position: fixed;
   }
   .menu-open .header__menu {
