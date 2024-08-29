@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             ref={imgRef}
             src={"/images/hero.jpeg"}
             alt={"hero background"}
-            loading={"lazy"}
+            priority={true}
             width={500}
             height={500}
           />

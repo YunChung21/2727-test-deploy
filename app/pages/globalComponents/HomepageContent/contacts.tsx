@@ -26,15 +26,9 @@ const Contacts: React.FC = () => {
     });
     return false;
   };
+
   const handleConversion = () => {
-    console.log("test1");
     gtag_report_conversion();
-    console.log("test2");
-    window.onload = function () {
-      console.log("test3");
-      window.lintrk("track", { conversion_id: 16308953 });
-    };
-    console.log("test4");
   };
 
   return (
