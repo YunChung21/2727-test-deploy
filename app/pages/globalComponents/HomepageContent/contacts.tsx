@@ -14,6 +14,7 @@ const Contacts: React.FC = () => {
     console.log("submitted!");
   };
 
+  /** 
   const gtag_report_conversion = (url?: string) => {
     var callback = function () {
       if (typeof url != "undefined") {
@@ -27,10 +28,11 @@ const Contacts: React.FC = () => {
     return false;
   };
 
+
   const handleConversion = () => {
     gtag_report_conversion();
   };
-
+*/
   return (
     <>
       <div className={styles.contacts} id="contacts">
@@ -136,13 +138,13 @@ const Contacts: React.FC = () => {
                   backgroundColor: canSubmit ? "#db5e5e" : "#ccc",
                   cursor: canSubmit ? "pointer" : "not-allowed",
                 }}
-                onClick={() => handleConversion()}
               >
                 Book A Tour
               </button>
             </form>
           </div>
           <div className={styles.contacts__map}>
+            {/** 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2797.5446454128055!2d-73.573016!3d45.478976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a78cb3fffff%3A0x5b8ba4648021eb5f!2s2727%20Saint-Patrick%20St.%20%23109%2C%20Montreal%2C%20QC%20H3K%200A8%2C%20Canada!5e0!3m2!1sen!2spl!4v1700083662626!5m2!1sen!2spl"
               width="500"
@@ -152,6 +154,7 @@ const Contacts: React.FC = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+            */}
           </div>
         </div>
       </div>
