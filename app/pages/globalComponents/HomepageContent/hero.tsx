@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "../../../css/section/hero.module.css";
@@ -7,6 +7,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   const imgRef = useRef(null);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -39,7 +40,6 @@ const Hero: React.FC = () => {
       <div className={styles.hero}>
         <div className={styles.hero__background}>
           <Image
-            ref={imgRef}
             src={"/images/hero.jpeg"}
             alt={"hero background"}
             width={500}
