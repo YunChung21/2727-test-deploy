@@ -78,10 +78,14 @@ const Header: React.FC<HeaderProps> = ({
     if (typeof window !== "undefined") {
       const currentPath = window.location.pathname;
 
-      if (currentPath === "/") {
+      console.log(currentPath);
+      if (currentPath === "/fr") {
         // If on the same page, scroll directly
         scrollToElement(id);
+
+        console.log("test1");
       } else {
+        console.log("test2");
         await router.push(`/#${id}`);
       }
     }

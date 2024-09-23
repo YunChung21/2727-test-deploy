@@ -18,7 +18,7 @@ const HomePage = () => {
         galleryText="Galerie"
         phoneLink="(438) 796-0017"
         phoneText="Appelez-nous: (438) 796-0017"
-        buttonLink="contacts"
+        buttonLink="FrenchContacts"
         buttonText="Obtenir un devis"
         black={false}
       />

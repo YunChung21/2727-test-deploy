@@ -14,7 +14,7 @@ const Contacts: React.FC = () => {
 
   return (
     <>
-      <div className={styles.contacts} id="contacts">
+      <div className={styles.contacts} id="FrenchContacts">
         <div className={styles.contacts__container}>
           <div className={styles.contacts__block}>
             <h2 className={styles.contacts__title}>
